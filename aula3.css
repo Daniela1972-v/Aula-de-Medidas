@@ -1,0 +1,73 @@
+/* RESUMO E DIFERENÇAS:
+
+min-width= Largura mínima. O elemento não pode ser menor que esse valor.
+
+* min-width -> Crescimento
+
+max-width= Largura máxima. O elemento não pode ser maior que esse valor.
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    padding: 50px;
+    background-color: burlywood;
+}
+
+.section1 {
+    padding: 180px;
+    background-color: cadetblue;
+}
+
+.section2 {
+    padding: 180px;
+    background-color: rgb(156, 109, 76);
+}
+
+footer {
+    padding: 50px;
+    background-color: brown;
+}
+
+@media (min-width:480px) {
+
+     header {
+        background-color: cornflowerblue;
+     }
+
+     .section1 {
+        background-color: blueviolet;
+     }
+
+     .section2 {
+        background-color: darkblue;
+        
+     }
+
+     footer {
+        background-color: black;
+     }
+}
+
+/*Estilos para tablets*/
+
+@media (min-width:600px) and (max-width:1024px) {
+     
+     .section1 {
+        color: white;
+        background-color: pink;
+     }
+    
+    .section2 {
+        color: white;
+        background-color: aquamarine;
+    }
+}
+
+
+
+
