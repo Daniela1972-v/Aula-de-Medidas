@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box; /*O box-sizing: border-box garante que o padding seja incluído no cálculo da largura, evitando que o conteúdo ultrapasse a tela.*/
+}
+
+html { /*Aqui estamos definindo que o nosso HTML ocupe totalidade em relação a altura e largura da nossa página.*/
+    width: 100vw;
+    height: 100vh;
+}
+
+
+header {
+    padding: 10vh; 
+    background-color: rgb(209, 155, 90);
+    width: 100vw; /*definimos a largura total do Header*/
+
+}
+
+.section01 {
+      background-color: antiquewhite; /*Definição cor de fundo*/
+      padding: 20vh; /*Preenchimento*/
+      display: flex; /*Tornando a section flex*/
+      justify-content: space-between; /*Justificando o conteúdo*/
+      align-items: center; /*Alinhando os itens ao centro*/
+      width: 100vw; /*Definindo a largura para 100%*/
+}
+
+
+/*section:last-child (ultima section) first-child (primeira section) { = Outro jeito de chamar a section sem classe
+    background-color: rgb(131, 73, 73);
+    padding: 30vh;
+    width: 100vw;
+}*/
+
+
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;   
+}
+
+.div-01 img {
+    margin: 5rem;
+    width: 30rem;
+}
+
+.section02 {
+    background-color: rgb(131, 73, 73); /*Definição cor de fundo*/
+    padding: 20vh; /*Preenchimento*/
+      display: flex; /*Tornando a section flex*/
+      justify-content: space-between; /*Justificando o conteúdo*/
+      align-items: center; /*Alinhando os itens ao centro*/
+      width: 100vw; /*Definindo a largura para 100%*/
+}
+
+.div-03 img {
+    margin: 5rem;
+    width: 30rem;
+}
+
+.div-04 p {
+    font-size: 2em;
+    margin: 1.2em;  
+}
+
+footer {
+    padding: 10vh;
+    background-color: rgb(209, 155, 90);
+    display: flex; /*Tornando a section flex*/
+    justify-content: space-between; /*Justificando o conteúdo*/
+    align-items: center; /*Alinhando os itens ao centro*/
+    width: 100vw;
+}
+
+.div01-footer img {
+    margin: 0;
+    width: 5rem;   
+}
+
+.div-02-footer nav ul li a {
+    text-decoration: none;
+    color: white;    
+}
+
+
+/*Estilização para tamanho de telas especificos ou seja, para uma largura máxima de 992*/
+@media (max-width:992px) {
+
+    .section01 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-02 img {
+        margin: 0 auto; /*Aqui estou chamando a imagem e definindo que a mesma fique com os valores superior inferior em 0 e as laterais sejam auto*/
+        width: 20rem; /*Largura da imagem*/
+    }
+
+    .div-01 p {
+        font-size: 25px; /*Ajuste o tamanho da fonte para se adequar á tela menor*/
+        line-height: 1.5; /*Espaçamento entre linhas para melhor legibilidade*/
+        width: 100%; /*Certifique-se de ocupar toda a largura*/
+        margin: 1em;
+    }
+
+    .section02 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-03 img {
+        margin: 0 auto;
+        width: 20rem;
+    }
+
+    .div-04 p {
+        font-size: 25px;
+        line-height: 1.5;
+        width: 100%;
+        margin: 1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div01-footer img {
+        margin: 0 auto;
+        width: 10rem;
+    }
+
+    
+
+
+}
