@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box; /*Garante que o preenchimento/padding seja incluído na cálculo da largura, evitando que o conteúdo ultrapasse a tela*/
 
 }
@@ -22,20 +23,22 @@ header {
     position: sticky; /*Posicionamento do Header usando o Stick, sendo um posicionamento fixo, porém distinto do Fixed*/
     top: 0; /*Espaçamento superior zerado, fazendo com que o Header fique grudado ao top*/
     left: 0; /*Espaçamento a esquerda zerado, fazendo com o que o Header fique grudado á esquerda*/
-    z-index: 999; /* Eixo de profundidade (Eixo Cartesiano) Prioridade total do Header*/
+    z-index: 999; /* Eixo Z de profundidade (Eixo Cartesiano) Prioridade total do Header*/
+
+    /*Borda inferior*/
     box-shadow: 0 0.21rem 0.5rem white; /*Primeiro valor sombra na Direita (0) Segundo valor sombra Bottom (0.21rem) Terceiro valor gradiant da sombra (0.5rem)*/
 
 }
 
 header img {
-    width: 10rem;
-    height: 1.5rem;
+    width: 8rem;
+    height: 5rem;
 }
 
 header button{
     width: 13rem;
     height: 1.5rem;
-    background-color: #fca483;
+    background-color: #cca192;
     border-radius: 1rem;
     padding: 1.3rem;
     color: white;
@@ -44,12 +47,117 @@ header button{
     justify-content: center;
 }
 
+.section-01 {
+     background-color: #f9d9ac;
+     width: 100%;
+     padding: min(20vh, 6rem);
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.section-02 {
+     background-color: #fca483;
+     width: 100%;
+     padding: min(20vh, 6rem);
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+
+}
+
+.div-01 p {
+    font-size: 1.5em;
+    margin: 1.2em;
+}
+
+.div-02 img {
+    width: 30rem;
+    margin: 10rem auto;
+    display: block; /*Garantindo que a imagem se comporte como um bloco*/
+}
+
+footer {
+    background-color: #bad3c6;
+    width: 100%;
+    padding: min(10vh, 4rem);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+     
+}
+
+.div01-footer img {   
+    width: 8rem;
+    height: 5rem;   
+}
+
+.div02-footer nav ul li a {
+    text-decoration: none;
+    color: #bb7054;
+}
+
+@media(max-width: 872px) {
+    header img {
+        font-size: 15em;
+        z-index: 999;
+    }
+     
+    header button {
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    .section-01 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .div-02 img {
+        width: 20rem;
+        margin: 0 auto;
+    }
+    .div-01 p {
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: left;
+        width: 100%;
+        padding: 2rem;
+        margin: 2em;
+    }
+
+    .section-02 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .div01-footer img {
+        font-size: 15em;
+        z-index: 999;
+    }
+
+
+}
 
 
 
 
 
 
-/* #f9d9ac = cor bege claro
-  #fca483 = cor salmão 
-   #f18886 = rosa queimado */
+
+
+
+
+
